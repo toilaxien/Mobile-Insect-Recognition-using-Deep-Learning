@@ -1,0 +1,35 @@
+{
+  "id": "dragonfly",
+  "displayName": "Chuồn chuồn",
+  "intro": "Chuồn chuồn là loài côn trùng có vòng đời đặc biệt, giai đoạn ấu trùng sống dưới nước và trưởng thành sống trên cạn. Chúng giúp kiểm soát muỗi và các côn trùng nhỏ khác.",
+
+  "clipKey": "Species/dragonfly/clip",
+  "audioKey": "Species/dragonfly/audio",
+
+  "stages": [
+    {
+      "title": "Giai đoạn 1: Trứng",
+      "duration": "1–3 tuần",
+      "environment": "Mặt nước hoặc thực vật thủy sinh",
+      "feature": "Nhỏ, tròn, màu trắng hoặc vàng",
+      "description": "Trứng được đẻ trực tiếp xuống nước để ấu trùng nở.",
+      "modelKey": "Species/dragonfly/models/stage1/Imported"
+    },
+    {
+      "title": "Giai đoạn 2: Ấu trùng (Naiad)",
+      "duration": "2 tháng – vài năm",
+      "environment": "Dưới nước",
+      "feature": "Thân dày, màu nâu hoặc xanh rêu",
+      "description": "Ấu trùng sống dưới nước, săn mồi và hô hấp bằng mang.",
+      "modelKey": "Species/dragonfly/models/stage2/Imported"
+    },
+    {
+      "title": "Giai đoạn 3: Trưởng thành",
+      "duration": "Vài tuần – vài tháng",
+      "environment": "Bờ sông, ao hồ, ruộng nước",
+      "feature": "Cánh dài mỏng, cơ thể thon, nhiều màu sắc",
+      "description": "Chuồn chuồn bay nhanh và săn muỗi cùng côn trùng nhỏ.",
+      "modelKey": "Species/dragonfly/models/stage3/Imported"
+    }
+  ]
+}

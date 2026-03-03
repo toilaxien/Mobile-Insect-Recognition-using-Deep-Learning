@@ -1,0 +1,43 @@
+{
+  "id": "ladybug",
+  "displayName": "Bọ rùa",
+  "intro": "Bọ rùa là loài côn trùng có ích, thường sống trên cây có rệp. Chúng giúp kiểm soát sâu hại tự nhiên nhờ khả năng ăn rệp rất mạnh.",
+
+  "clipKey": "Species/ladybug/clip",
+  "audioKey": "Species/ladybug/audio",
+
+  "stages": [
+    {
+      "title": "Giai đoạn 1: Trứng",
+      "duration": "3–7 ngày",
+      "environment": "Mặt dưới lá cây",
+      "feature": "Trứng hình oval, màu vàng",
+      "description": "Được đẻ gần nơi có rệp để ấu trùng có thức ăn.",
+      "modelKey": "Species/ladybug/models/stage1/Imported"
+    },
+    {
+      "title": "Giai đoạn 2: Ấu trùng",
+      "duration": "2–4 tuần",
+      "environment": "Trên cây nhiều rệp",
+      "feature": "Thân dài, màu đen hoặc xám với đốm vàng hoặc cam",
+      "description": "Ăn rệp mạnh mẽ, hỗ trợ kiểm soát sâu hại cây.",
+      "modelKey": "Species/ladybug/models/stage2/Imported"
+    },
+    {
+      "title": "Giai đoạn 3: Nhộng",
+      "duration": "5–10 ngày",
+      "environment": "Bám trên lá hoặc thân cây",
+      "feature": "Màu vàng nâu, ít cử động",
+      "description": "Cơ thể thay đổi để hình thành lớp vỏ và cánh.",
+      "modelKey": "Species/ladybug/models/stage3/Imported"
+    },
+    {
+      "title": "Giai đoạn 4: Trưởng thành",
+      "duration": "1–2 năm",
+      "environment": "Vườn, ruộng, nơi có côn trùng nhỏ",
+      "feature": "Tròn, nhiều màu: đỏ, vàng, cam, có chấm đen",
+      "description": "Tiếp tục ăn rệp và sinh sản.",
+      "modelKey": "Species/ladybug/models/stage4/Imported"
+    }
+  ]
+}

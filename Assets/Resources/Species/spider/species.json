@@ -1,0 +1,35 @@
+{
+  "id": "spider",
+  "displayName": "Nhện",
+  "intro": "Nhện là loài động vật chân khớp có khả năng giăng tơ để săn mồi. Chúng giúp kiểm soát số lượng côn trùng trong tự nhiên.",
+
+  "clipKey": "Species/spider/clip",
+  "audioKey": "Species/spider/audio",
+
+  "stages": [
+    {
+      "title": "Giai đoạn 1: Trứng",
+      "duration": "2–3 tuần",
+      "environment": "Trong túi tơ",
+      "feature": "Nhỏ, màu trắng",
+      "description": "Trứng được bảo vệ trong túi tơ do nhện mẹ tạo ra.",
+      "modelKey": "Species/spider/models/stage1/Imported"
+    },
+    {
+      "title": "Giai đoạn 2: Nhện non",
+      "duration": "Vài tuần – vài tháng",
+      "environment": "Ổ tơ hoặc trên lá cây",
+      "feature": "Giống nhện trưởng thành nhưng kích thước nhỏ",
+      "description": "Nhện non bắt đầu học cách săn mồi nhỏ.",
+      "modelKey": "Species/spider/models/stage2/Imported"
+    },
+    {
+      "title": "Giai đoạn 3: Trưởng thành",
+      "duration": "1–3 năm",
+      "environment": "Nhà ở, cây cối, bụi rậm",
+      "feature": "Nhiều màu sắc như nâu, đen hoặc cam",
+      "description": "Nhện trưởng thành giăng tơ để bắt côn trùng và sinh sản.",
+      "modelKey": "Species/spider/models/stage3/Imported"
+    }
+  ]
+}

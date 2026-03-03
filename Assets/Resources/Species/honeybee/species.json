@@ -1,0 +1,43 @@
+{
+  "id": "honeybee",
+  "displayName": "Ong",
+  "intro": "Ong là loài côn trùng sống theo bầy đàn và đóng vai trò quan trọng trong việc thụ phấn cho cây trồng. Chúng sống trong tổ ong với sự phân chia vai trò rõ ràng.",
+
+  "clipKey": "Species/honeybee/clip",
+  "audioKey": "Species/honeybee/audio",
+
+  "stages": [
+    {
+      "title": "Giai đoạn 1: Trứng",
+      "duration": "3 ngày",
+      "environment": "Bên trong tổ ong",
+      "feature": "Dạng que nhỏ, màu trắng",
+      "description": "Trứng được ong chúa đẻ vào từng ô sáp trong tổ.",
+      "modelKey": "Species/honeybee/models/stage1/Imported"
+    },
+    {
+      "title": "Giai đoạn 2: Ấu trùng",
+      "duration": "5–6 ngày",
+      "environment": "Trong các ô sáp của tổ ong",
+      "feature": "Thân mềm, màu trắng",
+      "description": "Ấu trùng được ong thợ cho ăn mật ong và phấn hoa.",
+      "modelKey": "Species/honeybee/models/stage2/Imported"
+    },
+    {
+      "title": "Giai đoạn 3: Nhộng",
+      "duration": "1–2 tuần",
+      "environment": "Ô sáp được đậy kín trong tổ ong",
+      "feature": "Bắt đầu hình thành chân và cánh",
+      "description": "Cơ thể biến đổi để phát triển thành ong trưởng thành.",
+      "modelKey": "Species/honeybee/models/stage3/Imported"
+    },
+    {
+      "title": "Giai đoạn 4: Trưởng thành",
+      "duration": "30–180 ngày",
+      "environment": "Tổ ong và khu vực có hoa",
+      "feature": "Màu vàng đen, có cánh",
+      "description": "Ong trưởng thành bay đi lấy mật, thụ phấn và bảo vệ tổ.",
+      "modelKey": "Species/honeybee/models/stage4/Imported"
+    }
+  ]
+}

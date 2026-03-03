@@ -1,0 +1,43 @@
+{
+  "id": "mosquito",
+  "displayName": "Muỗi",
+  "intro": "Muỗi là loài côn trùng phổ biến, sống gần các khu vực ẩm ướt và nước đọng. Một số loài muỗi có thể truyền bệnh cho con người.",
+
+  "clipKey": "Species/mosquito/clip",
+  "audioKey": "Species/mosquito/audio",
+
+  "stages": [
+    {
+      "title": "Giai đoạn 1: Trứng",
+      "duration": "24–72 giờ",
+      "environment": "Mặt nước tù đọng",
+      "feature": "Nhỏ, màu đen hoặc nâu, đẻ theo cụm",
+      "description": "Trứng nở nhanh trong môi trường ẩm ướt.",
+      "modelKey": "Species/mosquito/models/stage1/Imported"
+    },
+    {
+      "title": "Giai đoạn 2: Ấu trùng (Bọ gậy)",
+      "duration": "4–14 ngày",
+      "environment": "Trong nước",
+      "feature": "Thân dài, chuyển động uốn lượn",
+      "description": "Ấu trùng lọc vi sinh vật trong nước để làm thức ăn.",
+      "modelKey": "Species/mosquito/models/stage2/Imported"
+    },
+    {
+      "title": "Giai đoạn 3: Nhộng (Loăng quăng)",
+      "duration": "1–4 ngày",
+      "environment": "Trong nước",
+      "feature": "Hình dạng tròn hơn, hoạt động ít",
+      "description": "Nhộng chuẩn bị lột xác để trở thành muỗi trưởng thành.",
+      "modelKey": "Species/mosquito/models/stage3/Imported"
+    },
+    {
+      "title": "Giai đoạn 4: Trưởng thành",
+      "duration": "2–6 tuần",
+      "environment": "Khu vực ẩm ướt, gần nước",
+      "feature": "Thân mảnh, có vòi hút",
+      "description": "Muỗi trưởng thành bay đi kiếm ăn và sinh sản; muỗi cái hút máu để tạo trứng.",
+      "modelKey": "Species/mosquito/models/stage4/Imported"
+    }
+  ]
+}

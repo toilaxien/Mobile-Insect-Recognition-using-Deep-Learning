@@ -1,0 +1,43 @@
+{
+  "id": "silkworm",
+  "displayName": "Tằm",
+  "intro": "Tằm là loài côn trùng quen thuộc trong nông nghiệp, sống nhờ lá dâu tằm và nổi tiếng với khả năng tạo ra tơ tằm phục vụ cho ngành dệt.",
+
+  "clipKey": "Species/silkworm/clip",
+  "audioKey": "Species/silkworm/audio",
+
+  "stages": [
+    {
+      "title": "Giai đoạn 1: Trứng",
+      "duration": "7–14 ngày",
+      "environment": "Lá dâu tằm hoặc bề mặt phẳng được bảo vệ",
+      "feature": "Nhỏ, hình tròn hơi dẹt, màu trắng hoặc vàng nhạt",
+      "description": "Trứng được đẻ thành cụm và phát triển trong điều kiện ấm.",
+      "modelKey": "Species/silkworm/models/stage1/Imported"
+    },
+    {
+      "title": "Giai đoạn 2: Ấu trùng (Tằm)",
+      "duration": "3–6 tuần",
+      "environment": "Trên lá dâu tằm",
+      "feature": "Thân mềm, màu trắng ngà hoặc vàng kem",
+      "description": "Tằm ăn lá dâu liên tục để lớn nhanh và thay da nhiều lần.",
+      "modelKey": "Species/silkworm/models/stage2/Imported"
+    },
+    {
+      "title": "Giai đoạn 3: Nhộng (Kén tằm)",
+      "duration": "2–3 tuần",
+      "environment": "Trong kén tơ bám trên cành hoặc nơi cố định",
+      "feature": "Kén màu trắng, vàng hoặc kem",
+      "description": "Tằm nhả tơ tạo kén và biến đổi cơ thể bên trong.",
+      "modelKey": "Species/silkworm/models/stage3/Imported"
+    },
+    {
+      "title": "Giai đoạn 4: Trưởng thành (Ngài tằm)",
+      "duration": "1–2 tuần",
+      "environment": "Nơi khô ráo và ít gió",
+      "feature": "Cánh trắng hoặc vàng nhạt, không bay tốt",
+      "description": "Ngài giao phối và đẻ trứng để bắt đầu vòng đời mới.",
+      "modelKey": "Species/silkworm/models/stage4/Imported"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "butterfly",
+  "displayName": "Bướm",
+  "intro": "Bướm là loài côn trùng có vòng đời biến thái hoàn toàn và nổi bật với đôi cánh nhiều màu sắc. Chúng thường sống ở những nơi có nhiều hoa và giúp thụ phấn cho cây.",
+
+  "clipKey": "Species/butterfly/clip",
+  "audioKey": "Species/butterfly/audio",
+
+  "stages": [
+    {
+      "title": "Giai đoạn 1: Trứng",
+      "duration": "3–5 ngày",
+      "environment": "Mặt dưới lá cây non",
+      "feature": "Rất nhỏ, hình cầu hoặc oval, màu trắng hoặc vàng nhạt",
+      "description": "Trứng được đẻ gần nguồn thức ăn để sâu bướm nở ra có thể ăn ngay.",
+      "modelKey": "Species/butterfly/models/stage1/Imported"
+    },
+    {
+      "title": "Giai đoạn 2: Ấu trùng (Sâu bướm)",
+      "duration": "1–3 tuần",
+      "environment": "Trên lá cây",
+      "feature": "Thân dài, nhiều đốt, có thể có vằn hoặc chấm màu",
+      "description": "Sâu bướm ăn rất nhiều lá để lớn nhanh và thay da nhiều lần.",
+      "modelKey": "Species/butterfly/models/stage2/Imported"
+    },
+    {
+      "title": "Giai đoạn 3: Nhộng (Kén)",
+      "duration": "1–2 tuần",
+      "environment": "Treo trên cành cây hoặc ẩn trong lá",
+      "feature": "Màu xanh, vàng, nâu hoặc đục để ngụy trang",
+      "description": "Cơ thể biến đổi hoàn toàn bên trong kén để trở thành bướm.",
+      "modelKey": "Species/butterfly/models/stage3/Imported"
+    },
+    {
+      "title": "Giai đoạn 4: Trưởng thành",
+      "duration": "Vài tuần – vài tháng",
+      "environment": "Vườn hoa, đồng cỏ, nơi có nhiều ánh sáng",
+      "feature": "Cánh lớn, nhiều màu sắc và hoa văn đối xứng",
+      "description": "Bướm hút mật hoa và sinh sản để tạo thế hệ mới.",
+      "modelKey": "Species/butterfly/models/stage4/Imported"
+    }
+  ]
+}

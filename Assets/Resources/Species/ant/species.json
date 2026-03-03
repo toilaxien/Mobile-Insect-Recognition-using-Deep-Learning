@@ -1,0 +1,43 @@
+{
+  "id": "ant",
+  "displayName": "Kiến",
+  "intro": "Kiến là loài côn trùng sống theo bầy đàn với tổ chức rất chặt chẽ. Trong một đàn kiến có sự phân chia vai trò rõ ràng như kiến chúa, kiến thợ và kiến lính.",
+
+  "clipKey": "Species/ant/clip",
+  "audioKey": "Species/ant/audio",
+
+  "stages": [
+    {
+      "title": "Giai đoạn 1: Trứng",
+      "duration": "1–2 tuần",
+      "environment": "Trong tổ dưới đất hoặc trong gỗ",
+      "feature": "Nhỏ, màu trắng, hình bầu dục",
+      "description": "Trứng do kiến chúa đẻ và được các kiến thợ chăm sóc, bảo vệ.",
+      "modelKey": "Species/ant/models/stage1/Imported"
+    },
+    {
+      "title": "Giai đoạn 2: Ấu trùng",
+      "duration": "1–3 tuần",
+      "environment": "Bên trong tổ kiến",
+      "feature": "Không chân, thân mềm, màu trắng",
+      "description": "Ấu trùng được kiến thợ cho ăn và chăm sóc liên tục.",
+      "modelKey": "Species/ant/models/stage2/Imported"
+    },
+    {
+      "title": "Giai đoạn 3: Nhộng",
+      "duration": "1–2 tuần",
+      "environment": "Trong tổ kiến",
+      "feature": "Hình dạng gần giống kiến con, có hoặc không có kén",
+      "description": "Cơ thể biến đổi để hình thành kiến trưởng thành.",
+      "modelKey": "Species/ant/models/stage3/Imported"
+    },
+    {
+      "title": "Giai đoạn 4: Trưởng thành",
+      "duration": "6 tháng – nhiều năm",
+      "environment": "Đất, rừng, nhà ở và cây cối",
+      "feature": "Màu đen hoặc đỏ, kích thước khác nhau",
+      "description": "Kiến trưởng thành đảm nhiệm các vai trò như kiếm ăn, bảo vệ tổ và sinh sản.",
+      "modelKey": "Species/ant/models/stage4/Imported"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "fly",
+  "displayName": "Ruồi",
+  "intro": "Ruồi là loài côn trùng phổ biến, thường sống gần con người và các nguồn thức ăn phân hủy. Chúng sinh sản nhanh và có vòng đời biến thái hoàn toàn.",
+
+  "clipKey": "Species/fly/clip",
+  "audioKey": "Species/fly/audio",
+
+  "stages": [
+    {
+      "title": "Giai đoạn 1: Trứng",
+      "duration": "8–24 giờ",
+      "environment": "Thực phẩm thối rữa hoặc rác hữu cơ",
+      "feature": "Nhỏ, màu trắng",
+      "description": "Trứng được đẻ ở nơi có nhiều chất hữu cơ để ấu trùng nở ra có thức ăn.",
+      "modelKey": "Species/fly/models/stage1/Imported"
+    },
+    {
+      "title": "Giai đoạn 2: Ấu trùng (Dòi)",
+      "duration": "3–7 ngày",
+      "environment": "Bên trong nguồn thức ăn phân hủy",
+      "feature": "Không chân, thân mềm, màu trắng",
+      "description": "Ấu trùng ăn chất hữu cơ phân hủy để lớn nhanh.",
+      "modelKey": "Species/fly/models/stage2/Imported"
+    },
+    {
+      "title": "Giai đoạn 3: Nhộng",
+      "duration": "3–6 ngày",
+      "environment": "Nơi khô gần nguồn thức ăn",
+      "feature": "Vỏ cứng, màu nâu đỏ",
+      "description": "Cơ thể biến đổi để hình thành ruồi trưởng thành.",
+      "modelKey": "Species/fly/models/stage3/Imported"
+    },
+    {
+      "title": "Giai đoạn 4: Trưởng thành",
+      "duration": "2–4 tuần",
+      "environment": "Khu vực gần con người",
+      "feature": "Thân xám, mắt lớn màu đỏ",
+      "description": "Ruồi trưởng thành bay đi kiếm ăn và sinh sản rất nhanh.",
+      "modelKey": "Species/fly/models/stage4/Imported"
+    }
+  ]
+}
