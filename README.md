@@ -38,7 +38,7 @@ Offline Processing: Toàn bộ quá trình xử lý AI diễn ra 100% trên thi�
 🛠 Tech Stack
 AI/ML: Python, TensorFlow, Keras, OpenCV.
 
-Mobile App: Unity Engine, Chttps://www.google.com/search?q=%23 (Logic handling & UI).
+Mobile App: Unity Engine.
 
 Deployment: TensorFlow Lite SDK for Unity.
 
@@ -52,9 +52,6 @@ Deployment: TensorFlow Lite SDK for Unity.
 | **Target OS** | Android 7.0 (API 24) or higher |
 
 🎥 Demo & Screenshots
-
-Unity hiển thị nội dung giáo dục và mô hình 3D
-<img width="966" height="570" alt="image" src="https://github.com/user-attachments/assets/c3417539-ad74-4be3-9a88-cd4221204923" />
 
 Link YouToBe: Để xem chi tiết quá trình hoạt động của ứng dụng (Nhận diện, Hiển thị mô hình 3D và Mini-game), vui lòng xem video dưới đây:
 
