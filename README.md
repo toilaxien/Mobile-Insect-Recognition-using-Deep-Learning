@@ -1,88 +1,63 @@
-🐝 Ứng dụng Nhận Diện Côn Trùng Cho Trẻ Em
+🐝 Edge-AI Insect Recognition & AR Visualization
+Real-time Computer Vision system optimized for mobile devices using MobileNetV3 and TensorFlow Lite.
 
-📌 Giới thiệu
+📌 Project Overview
+Dự án này triển khai một hệ thống nhận diện côn trùng thời gian thực, tích hợp công nghệ Thực tế ảo (AR) nhằm hỗ trợ giáo dục trực quan cho trẻ em. Thách thức lớn nhất của dự án là duy trì độ chính xác cao trong khi vẫn đảm bảo tốc độ suy luận (Inference speed) mượt mà trên các thiết bị di động có cấu hình phần cứng hạn chế.
 
-Đây là ứng dụng hỗ trợ học tập dành cho trẻ mẫu giáo, được phát triển bằng Unity và tích hợp Trí tuệ nhân tạo (AI) để nhận diện côn trùng thông qua camera điện thoại.
+🧠 AI Engineering & Optimization (Key Highlights)
+Để đưa được mô hình Deep Learning từ môi trường nghiên cứu (Python) lên ứng dụng thực tế (Mobile), tôi đã thực hiện các giải pháp kỹ thuật sau:
 
-Ứng dụng giúp trẻ vừa học vừa chơi, tăng khả năng ghi nhớ và nhận biết các loài côn trùng phổ biến thông qua hình ảnh, mô hình 3D và nội dung minh họa sinh động.
+1. Model Architecture & Training
+Backbone: Sử dụng MobileNetV3-Small – được thiết kế với kiến trúc Neural Architecture Search (NAS), tối ưu riêng cho CPU điện thoại.
 
-🎯 Mục tiêu đề tài
+Transfer Learning: Tận dụng pre-trained weights từ ImageNet để trích xuất đặc trưng mạnh mẽ dù tập dữ liệu đầu vào giới hạn.
 
-Xây dựng ứng dụng học tập ứng dụng AI cho trẻ mẫu giáo
+Preprocessing Pipeline: Áp dụng Data Augmentation (Random Rotation, Zoom, Horizontal Flip) để tăng khả năng tổng quát hóa, giúp model nhận diện tốt ngay cả khi trẻ em cầm điện thoại ở các góc độ không chuẩn.
 
-Nhận diện và phân loại 11 loài côn trùng phổ biến
+2. On-Device Optimization (TFLite)
+Post-Training Quantization (INT8): Chuyển đổi trọng số từ Float32 sang Integer 8-bit.
 
-Tích hợp mô hình học sâu chạy trực tiếp trên thiết bị Android
+Kết quả: Giảm dung lượng model xuống ~4MB (tiết kiệm 75% bộ nhớ).
 
-Thiết kế giao diện trực quan, dễ sử dụng, phù hợp với trẻ nhỏ
+Hiệu năng: Tăng tốc độ xử lý trên CPU lên gấp 3 lần, giảm hiện tượng nóng máy khi sử dụng lâu.
 
-Tăng tính tương tác thông qua hình ảnh minh họa và mô hình 3D
+Inference Latency: Đạt mức ~30ms/frame, đảm bảo trải nghiệm real-time không độ trễ.
 
-🚀 Tính năng chính
-📷 1. Quét và nhận diện côn trùng
+3. Image Processing Workflow
+Hệ thống tự động thực hiện Image Resizing (224x224) và Normalization trước khi đưa vào tensor đầu vào.
 
-Sử dụng camera điện thoại để chụp hình
+Cơ chế Probability Thresholding: Chỉ hiển thị kết quả khi độ tin cậy (Confidence Score) > 0.7 để tránh tình trạng nhận diện sai (False Positive).
 
-Mô hình Deep Learning phân loại 11 loài côn trùng
+🚀 Key Features
+Instant Identification: Nhận diện 11 loài côn trùng phổ biến (Ong, Bướm, Kiến, Chuồn chuồn, Gián, Bọ hung, Muỗi, Nhện, Bọ chân dài, Bọ rùa, Sâu bướm).
 
-Hiển thị độ chính xác dự đoán
+3D Interactive AR: Tự động kích hoạt mô hình 3D tương ứng sau khi nhận diện thành công, cho phép trẻ xoay/phóng to để quan sát.
 
-📊 2. Hiển thị kết quả trực quan
+Offline Processing: Toàn bộ quá trình xử lý AI diễn ra 100% trên thiết bị, không cần kết nối Internet, đảm bảo quyền riêng tư và tốc độ.
 
-Tên loài côn trùng
+🛠 Tech Stack
+AI/ML: Python, TensorFlow, Keras, OpenCV.
 
-Hình ảnh minh họa sinh động
+Mobile App: Unity Engine, Chttps://www.google.com/search?q=%23 (Logic handling & UI).
 
-Mô hình 3D tương tác
+Deployment: TensorFlow Lite SDK for Unity.
 
-📚 3. Thông tin giáo dục
+📊 Performance Metrics
 
-Vòng đời của côn trùng
+| Metric | Value |
+| :--- | :--- |
+| **Accuracy (Top-1)** | 92.4% |
+| **Inference Time (Mobile CPU)** | 25ms - 35ms |
+| **Model Size** | 3.8 MB |
+| **Target OS** | Android 7.0 (API 24) or higher |
 
-Đặc điểm nhận dạng
-
-Môi trường sống
-
-Vai trò trong tự nhiên
-
-🤖 Công nghệ sử dụng
-
-🎮 Unity Engine (Phát triển giao diện và ứng dụng)
-
-🧠 Deep Learning (Mô hình học sâu huấn luyện phân loại ảnh)
-
-📦 TensorFlow Lite (Triển khai mô hình AI trên Android)
-
-📱 Android Platform
-
-⚙️ Kiến trúc hệ thống
-
-Camera thu hình ảnh
-
-Ảnh được tiền xử lý
-
-Mô hình TensorFlow Lite thực hiện suy luận (inference)
-
-Trả về kết quả dự đoán
+🎥 Demo & Screenshots
 
 Unity hiển thị nội dung giáo dục và mô hình 3D
 <img width="966" height="570" alt="image" src="https://github.com/user-attachments/assets/c3417539-ad74-4be3-9a88-cd4221204923" />
 
+Link YouToBe: Để xem chi tiết quá trình hoạt động của ứng dụng (Nhận diện, Hiển thị mô hình 3D và Mini-game), vui lòng xem video dưới đây:
 
-📱 Yêu cầu hệ thống
+[![Watch the video](https://img.youtube.com/vi/W12V03jDgb0/0.jpg)](https://youtube.com/shorts/W12V03jDgb0)
 
-Android 7.0 trở lên
 
-RAM tối thiểu 2GB
-
-Hỗ trợ camera
-
-🌟 Giá trị đạt được
-
-Hỗ trợ trẻ học tập một cách trực quan và sinh động
-
-Ứng dụng AI trong giáo dục mầm non
-
-Tối ưu mô hình học sâu cho thiết bị cấu hình thấp
-
-Đánh giá khả năng tích hợp AI vào Unity
