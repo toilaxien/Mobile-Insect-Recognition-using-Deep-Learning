@@ -53,7 +53,7 @@ Deployment: TensorFlow Lite SDK for Unity.
 
 🎥 Demo & Screenshots
 
-Link YouToBe: Để xem chi tiết quá trình hoạt động của ứng dụng (Nhận diện, Hiển thị mô hình 3D và Mini-game), vui lòng xem video dưới đây:
+Link YouTuBe: Để xem chi tiết quá trình hoạt động của ứng dụng (Nhận diện, Hiển thị mô hình 3D và Mini-game), vui lòng xem video dưới đây:
 
 [![Watch the video](https://img.youtube.com/vi/W12V03jDgb0/0.jpg)](https://youtube.com/shorts/W12V03jDgb0)
 
