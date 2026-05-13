@@ -1,48 +1,114 @@
-🐝 Edge-AI Insect Recognition & AR Visualization
+# 🐝 Edge-AI Insect Recognition & AR Visualization
+
 Real-time Computer Vision system optimized for mobile devices using MobileNetV3 and TensorFlow Lite.
 
-📌 Project Overview
-Dự án này triển khai một hệ thống nhận diện côn trùng thời gian thực, tích hợp công nghệ Thực tế ảo (AR) nhằm hỗ trợ giáo dục trực quan cho trẻ em. Thách thức lớn nhất của dự án là duy trì độ chính xác cao trong khi vẫn đảm bảo tốc độ suy luận (Inference speed) mượt mà trên các thiết bị di động có cấu hình phần cứng hạn chế.
+---
 
-🧠 AI Engineering & Optimization (Key Highlights)
-Để đưa được mô hình Deep Learning từ môi trường nghiên cứu (Python) lên ứng dụng thực tế (Mobile), tôi đã thực hiện các giải pháp kỹ thuật sau:
+# 📌 Project Overview
 
-1. Model Architecture & Training
-Backbone: Sử dụng MobileNetV3-Small – được thiết kế với kiến trúc Neural Architecture Search (NAS), tối ưu riêng cho CPU điện thoại.
+This project implements a real-time insect recognition system integrated with Augmented Reality (AR) technology to support interactive educational experiences for children. The primary challenge of the project was maintaining high recognition accuracy while ensuring smooth inference speed on resource-constrained mobile devices.
 
-Transfer Learning: Tận dụng pre-trained weights từ ImageNet để trích xuất đặc trưng mạnh mẽ dù tập dữ liệu đầu vào giới hạn.
+---
 
-Preprocessing Pipeline: Áp dụng Data Augmentation (Random Rotation, Zoom, Horizontal Flip) để tăng khả năng tổng quát hóa, giúp model nhận diện tốt ngay cả khi trẻ em cầm điện thoại ở các góc độ không chuẩn.
+# 🧠 AI Engineering & Optimization (Key Highlights)
 
-2. On-Device Optimization (TFLite)
-Post-Training Quantization (INT8): Chuyển đổi trọng số từ Float32 sang Integer 8-bit.
+To deploy the Deep Learning model from a research environment (Python) into a real-world mobile application, several optimization techniques were applied.
 
-Kết quả: Giảm dung lượng model xuống ~4MB (tiết kiệm 75% bộ nhớ).
+## 1. Model Architecture & Training
 
-Hiệu năng: Tăng tốc độ xử lý trên CPU lên gấp 3 lần, giảm hiện tượng nóng máy khi sử dụng lâu.
+### Backbone
+Used **MobileNetV3-Small**, a lightweight architecture designed through Neural Architecture Search (NAS) and optimized specifically for mobile CPUs.
 
-Inference Latency: Đạt mức ~30ms/frame, đảm bảo trải nghiệm real-time không độ trễ.
+### Transfer Learning
+Leveraged pre-trained ImageNet weights to extract robust visual features even with a relatively limited dataset.
 
-3. Image Processing Workflow
-Hệ thống tự động thực hiện Image Resizing (224x224) và Normalization trước khi đưa vào tensor đầu vào.
+### Preprocessing Pipeline
+Applied extensive Data Augmentation techniques including:
+- Random Rotation
+- Zoom
+- Horizontal Flip
 
-Cơ chế Probability Thresholding: Chỉ hiển thị kết quả khi độ tin cậy (Confidence Score) > 0.7 để tránh tình trạng nhận diện sai (False Positive).
+These augmentations improved model generalization and enabled robust recognition under non-ideal camera angles commonly produced by children during usage.
 
-🚀 Key Features
-Instant Identification: Nhận diện 11 loài côn trùng phổ biến (Ong, Bướm, Kiến, Chuồn chuồn, Gián, Bọ hung, Muỗi, Nhện, Bọ chân dài, Bọ rùa, Sâu bướm).
+---
 
-3D Interactive AR: Tự động kích hoạt mô hình 3D tương ứng sau khi nhận diện thành công, cho phép trẻ xoay/phóng to để quan sát.
+## 2. On-Device Optimization (TensorFlow Lite)
 
-Offline Processing: Toàn bộ quá trình xử lý AI diễn ra 100% trên thiết bị, không cần kết nối Internet, đảm bảo quyền riêng tư và tốc độ.
+### Post-Training Quantization (INT8)
+Converted model weights from Float32 to 8-bit integers.
 
-🛠 Tech Stack
-AI/ML: Python, TensorFlow, Keras, OpenCV.
+### Results
+- Reduced model size to approximately **4MB** (around 75% memory reduction)
+- Achieved approximately **3× faster CPU inference**
+- Reduced thermal issues during prolonged mobile usage
 
-Mobile App: Unity Engine.
+### Inference Latency
+Achieved approximately **30ms/frame**, ensuring smooth real-time performance with minimal latency.
 
-Deployment: TensorFlow Lite SDK for Unity.
+---
 
-📊 Performance Metrics
+## 3. Image Processing Workflow
+
+The system automatically performs:
+- Image Resizing (224×224)
+- Input Normalization
+
+before feeding data into the inference tensor pipeline.
+
+### Probability Thresholding
+Implemented a confidence threshold mechanism:
+- Predictions are displayed only when the confidence score exceeds **0.7**
+- Helps reduce false positives and unstable predictions
+
+---
+
+# 🚀 Key Features
+
+## Instant Identification
+Recognizes 11 common insect species including:
+- Bee
+- Butterfly
+- Ant
+- Dragonfly
+- Cockroach
+- Beetle
+- Mosquito
+- Spider
+- Harvestman
+- Ladybug
+- Caterpillar
+
+## 3D Interactive AR
+Automatically activates corresponding 3D AR models after successful recognition, allowing children to:
+- Rotate models
+- Zoom in/out
+- Interactively explore insect structures
+
+## Offline Processing
+All AI inference is performed entirely on-device:
+- No Internet connection required
+- Faster response time
+- Better privacy protection
+
+---
+
+# 🛠 Tech Stack
+
+## AI/ML
+- Python
+- TensorFlow
+- Keras
+- OpenCV
+
+## Mobile Application
+- Unity Engine
+
+## Deployment
+- TensorFlow Lite SDK for Unity
+
+---
+
+# 📊 Performance Metrics
 
 | Metric | Value |
 | :--- | :--- |
@@ -51,10 +117,16 @@ Deployment: TensorFlow Lite SDK for Unity.
 | **Model Size** | 3.8 MB |
 | **Target OS** | Android 7.0 (API 24) or higher |
 
-🎥 Demo & Screenshots
+---
 
-Link YouTuBe: Để xem chi tiết quá trình hoạt động của ứng dụng (Nhận diện, Hiển thị mô hình 3D và Mini-game), vui lòng xem video dưới đây:
+# 🎥 Demo & Screenshots
+
+## YouTube Demo
+
+Watch the full demonstration of:
+- Real-time insect recognition
+- AR visualization
+- Interactive 3D models
+- Mini-game integration
 
 [![Watch the video](https://img.youtube.com/vi/W12V03jDgb0/0.jpg)](https://youtube.com/shorts/W12V03jDgb0)
-
-
